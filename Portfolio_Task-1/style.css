@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db;
+    transition: background-color 4s;
+}
+
+
+header {
+    /* border:  2px solid rgb(7, 201, 169); */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+.img-box {
+    /* border:  2px solid rgb(201, 175, 7); */
+    margin: auto 0;
+    padding: 10px 20px;
+}
+
+.img-box img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+.text-box {
+    /* border:  2px solid rgb(201, 175, 7); */
+    padding: 20px 30px;
+    margin-top: 10px;
+}
+
+.text-box h3 {
+    font-size: 2rem;
+
+}
+
+.text-box p {
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+section {
+    /* border:  2px solid red; */
+    min-height: 120vh;
+   max-height:auto ;
+    padding: 5px 12%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* .................................About.............. */
+
+.Detail-box {
+    border: 2px solid rgb(6, 6, 6);
+    width: 600px;
+    min-height: 20px;
+
+    padding: 20px 20px;
+    background-color: blueviolet;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 25px;
+    transition: background-color 1.5s, height 0.3s;
+    /* Combine both transitions */
+    overflow: hidden;
+    transition: all ease-in-out 0.4s;
+}
+
+
+.Detail-box:hover {
+    height: auto;
+    /* Increase the height on hover to show all content */
+
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.Detail-box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    color: #fff;
+    position: relative;
+}
+
+
+#open-icon{
+    width: 30px ;
+height: 30px;
+position: absolute;
+left: 90%;
+
+}
+
+
+
+.Detail-box h3:hover::after {
+    /* Apply :hover to the h3 element, not the ::after pseudo-element */
+    cursor: pointer;
+    transform: scale(1.5);
+    /* Correct the property name and value */
+}
+
+.my-selft-detail {
+    border: 2px solid rgb(16, 245, 249);
+    min-height: 100px;
+    max-height: auto;
+
+    background-color: white;
+    border-radius: 25px;
+
+    display: none;
+    padding: 20px 40px;
+}
+
+.my-selft-detail p {
+    font-size: 1.4rem;
+
+
+}
+.my-selft-detail img{
+    width: 508px;
+    height: 258px;
+border-radius:20px ;
+margin: 20px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .................................Skills.............. */
+
+
+
+.language-icon img{
+width: 70px;
+height: 70px;
+}
+
+
+
+/* .................................Eduction.............. */
+.education {}
+
+
+
+/* .................................Contact Us.............. */
+form {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    border:  2px solid greenyellow;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* border:  2px solid rgb(211, 219, 51); */
+
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
