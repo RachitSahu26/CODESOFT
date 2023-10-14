@@ -13,6 +13,7 @@ const colors = [
 
 let detailAnimated = document.getElementsByClassName("Detail-box");
 
+
 // Function to change the background color automatically
 function changeColors() {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -21,8 +22,55 @@ function changeColors() {
     for (let i = 0; i < detailAnimated.length; i++) {
         detailAnimated[i].style.backgroundColor = randomColor;
     }
+
+   
+
+
 }
 
 setInterval(changeColors, 3000);
 
 
+
+
+
+
+
+
+
+
+const detailBoxes = document.querySelectorAll(".Detail-box");
+
+detailBoxes.forEach(detailBox => {
+    let h3 = detailBox.querySelector("h3");
+    let myDetail = detailBox.querySelector(".my-selft-detail");
+
+    // Hide the content initially using CSS
+    myDetail.style.display = "none";
+
+    // Add a click event listener to the h3 element
+    h3.addEventListener("click", function (e) {
+        // Toggle the display property to show/hide the content for the specific Detail-box
+        if (myDetail.style.display === "none") {
+         
+            myDetail.style.display = "block";
+
+       
+        } 
+        else {
+            myDetail.style.display = "none";
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+    });
+});

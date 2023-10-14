@@ -1,0 +1,122 @@
+/* .........................Media Queries.............. */
+
+
+@media screen and (max-width:415px) {
+  
+    section {
+
+        min-height: 80vh;
+     
+    
+    }
+  
+  
+    .Detail-box {
+        border: 2px solid rgb(6, 6, 6);
+        width: 320px;
+    }
+
+    #open-icon{
+        width: 20px ;
+    height: 20px;
+    position: absolute;
+    left: 94%;
+    top: 27%;
+    align-items: center;
+    }
+    
+.my-selft-detail p {
+    font-size: 1.2rem;
+padding: 5px 5px;
+   
+}
+    
+.proj-img img{
+    width: 235px ;
+    height: 190px;
+    }
+    
+    
+
+
+
+
+   
+footer{
+    /* border: 2px solid yellow; */
+
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    flex-direction: column;
+margin: 0px 0px;
+}
+
+
+.social-links{
+    /* border: 2px solid rgb(0, 81, 255); */
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 50px 10px;
+
+}
+
+
+
+
+.social-links img{
+width: 50px ;
+height: 50px;
+
+padding: 10px 20px;
+transition: 1s;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...................................(361)...................... */
+
+
+
+@media screen and (max-width:415px) {
+
+
+    .Detail-box {
+        border: 2px solid rgb(6, 6, 6);
+        width: 260px;
+    }
+
+    .my-selft-detail p {
+        font-size: 1rem;
+  
+    }
+    .proj-img img{
+        width: 180px ;
+        height: 150px;
+        }
+        
+        
+}
+
