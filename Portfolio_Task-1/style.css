@@ -33,8 +33,8 @@ header {
 }
 
 .img-box img {
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 265px;
     border-radius: 50%;
 }
 
@@ -94,7 +94,7 @@ section {
     /* Increase the height on hover to show all content */
 
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(0.9);
 
 }
 
