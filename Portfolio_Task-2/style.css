@@ -1,0 +1,142 @@
+/* body{
+
+        background-color: black;
+        color:#fff;
+} */
+
+
+
+/* ---------------------mainContainer-------------------- */
+.container{
+
+
+border: 2px solid red;
+display: flex;
+height: 100vh;
+flex-direction: column;
+justify-content:space-between ;
+/* justify-content: center; */
+align-items: center;
+}
+
+
+.to-do-heading{
+    border: 2px solid rgb(18, 28, 222);
+text-align: center;
+padding: 20px 40px;
+min-height:200px ;
+
+max-height: auto;
+
+}
+
+
+
+
+
+#input-box{
+padding: 20px 30px;
+border-radius: 20px;
+
+font-size: 20px;
+
+}
+
+#add-btn{
+    border-radius: 20px;
+    font-size: 20px;
+background: greenyellow;
+
+    padding: 20px 30px;
+
+
+}
+
+
+
+
+
+/* ...............list-area.............. */
+
+ul{
+    border: 2px solid yellow;
+}
+
+
+ul li {
+    list-style: none;
+    border: 2px solid rgb(30, 0, 255);
+    
+    font-size: 25px;
+    line-height: 45px;
+    position: relative;
+    left: 0px;
+    
+    }
+    
+    ul li::before{
+        content: '';
+        background-image: url(../Portfolio_Task-2/icon/bx-checkbox.svg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        /* top: 6px; */
+        left: -46px;
+        height: 50px;
+        cursor: pointer;
+    
+        width: 50px;
+    }
+    
+    
+    .checked{
+        color: rgb(72, 71, 71);
+        text-decoration: line-through red;
+        cursor: pointer;
+    
+    }
+    
+    
+    
+     
+    .checked::before{
+    
+        background-image: url(../Portfolio_Task-2/icon/bx-checkbox-checked.svg);
+        cursor: pointer;
+    
+    
+    }
+    
+    
+    span{
+        font-size: 43px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        position: absolute;
+        /* top: 4px; */
+        left: 320px;
+        transition: 1s;
+    }
+    span:hover{
+        scale: 0.9;
+    border-radius: 20%;
+    cursor: pointer;
+    box-shadow: 0,0,10,0 red;
+    background-color: rgb(249, 83, 83);
+    
+     }
+    
+/* ---------------------Footer Area-------------------- */
+
+
+
+
+    footer{
+
+        border: 2px solid rgb(4, 226, 12);
+        padding: 20px 30px;
+
+
+    }
+
