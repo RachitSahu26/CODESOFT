@@ -1,0 +1,81 @@
+
+ul{
+    border: 2px solid yellow;
+
+    min-height:200px ;
+padding: 30px 50px;
+    max-height: auto;
+}
+
+
+ul li {
+    list-style: none;
+    /* border: 2px solid rgb(30, 0, 255); */
+    padding: 20px 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    line-height: 45px;
+    margin-top:30px ;
+    background-color: rgba(155, 153, 153, 0.692);
+    position: relative;
+    left: 0px;
+    
+    }
+
+
+
+ 
+    ul li::before{
+        content: '';
+        background-image: url(./icon/bx-checkbox.svg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        /* top: 6px; */
+        left: 10px;
+        height: 50px;
+        padding: 10px 20px;
+        cursor: pointer;
+    /* background-color: red; */
+        width: 50px;
+    }
+    
+    
+    .checked{
+        color: rgb(72, 71, 71);
+        text-decoration: line-through red;
+        cursor: pointer;
+    
+    }
+    
+    
+    
+     
+    .checked::before{
+    
+        background-image: url(./icon/bx-checkbox-checked.svg);
+        cursor: pointer;
+    
+    
+    }
+    
+    
+    .imgIcon{
+        width: 30px;
+        height: 30px;
+        align-items: center;
+
+position:relative;
+left: 83px;
+top: 5px;
+transition: 1s;
+    }
+    .imgIcon:hover{
+        scale: 0.9;
+    border-radius: 20%;
+    cursor: pointer;
+    box-shadow: 0,0,10,0 red;
+    background-color: rgb(249, 83, 83);
+    
+     }
+    
