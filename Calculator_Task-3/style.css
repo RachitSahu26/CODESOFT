@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "sans";
-    background-color: #19172e;
+    background-color: #000000;
     color: white;
     user-select: none;
   }
@@ -25,24 +25,36 @@
 
 
 }
-
+@media screen and (max-width:415px ) {
+    .main-box{
+       
+    
+        padding: 80px 10px;
+    
+    
+    }
+ 
+  }
+  
   h2 {
     top: 0;
     /* padding-top: 20px; */
     color: white;
     font-size: 2rem;
-
+padding: 10px 10px;
     text-align: center;
   }
   
   .container {
     max-width: 290px;
     /* margin: 50px auto 0; */
-    padding: 10px 10px;
+    padding: 20px 10px;
+    border-radius: 20px;
     border: 2px solid rgb(13, 45, 247);
+  box-shadow: 0px 0px 12px 0px rgb(98, 0, 255);
     
   }
-  
+
   #display {
     text-align: right;
     height: 60px;
@@ -62,15 +74,19 @@
   .buttons {
     display: grid;
     margin-top: 12px;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0fr;
  
     padding: 15px 15px;
 
 }
-  
+  .operator {
+color: yellow;
+  /* box-shadow: 0px 0px 12px 0px yellow; */
+
+}
   .button {
-    border: 0.5px solid white;
+    /* border: 0.5px solid white; */
     line-height: 60px;
     text-align: center;
     font-size: 1.7rem;
@@ -107,4 +123,8 @@
   
   .footer {
     border: 2px solid rgb(8, 221, 125);
+    padding: 10px 10px;
+    border-radius: 10px ;
+  box-shadow: 0px 0px 12px 0px rgb(8, 221, 125);
+
   }
